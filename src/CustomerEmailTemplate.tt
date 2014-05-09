@@ -1,0 +1,13 @@
+﻿<#@ template language="C#" #>
+<#@ parameter 
+	name="Customer" 
+	type="ConsoleApplication1.Customer" #>
+
+Hi <#= Customer.Name #>,
+
+Thanks for logging onto our application on <#= 
+	Customer.LastLoginDate.ToString("d MMMM yyyy") #>!
+
+Please be sure to come back again soon!
+
+The Email Generation Co.
